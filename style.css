@@ -1,8 +1,20 @@
+*{
+    font-family: oswald;
+    color: #A84FD5;
+}
 
+html,body{
+    height: 100%;
+}
 
 body{
+    height: 100%;
     background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
+
 header{
     padding: 0.7rem 0;
     display:flex;
@@ -11,7 +23,7 @@ header{
     border-bottom: 3px solid black;
     z-index: 3;
     position: sticky;
-
+    background-color: rgb(37, 37, 37);
 }
 
 ul{
@@ -39,17 +51,108 @@ h2{
 a{
     font-family: oswald;
     font-weight: 400;
+    color: #A84FD5;
+    text-decoration: none;
 }
 
 #titleName{
     line-height: 2rem;
 }
 
-a{
-    color: #A84FD5;
-    text-decoration: none;
-}
-
 a:hover{
     color: #FA57FF;
 }
+
+.row-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    width:auto;
+    height: 14rem;
+}
+
+.row-item{
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    width: 15%;
+    height: 100%;
+    justify-content: space-between;  
+    align-items: center;
+    text-align: center;
+}
+#showcase{
+    background-image: url(./Resources/showcase.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#majewels{
+    background-image: url(./Resources/majewels.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#tiling{
+    background-image: url(./Resources/tiling.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row-image{
+    width: 100%;
+    height: 90%;
+    border-radius: 3%;
+}
+
+.row-image:hover{
+    box-shadow: 0px 0px 30px 5px #FA57FF;
+}
+
+
+footer{
+    position:fixed;
+    left: 0; right: 0; bottom: 0;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.2;
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+.footer-item{
+    height: 100%;
+    text-align: center;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.github{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#profession{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#skills{
+    font-weight: 300;
+}
+
+#copyright{
+    font-weight: 300;
+}
+
+
