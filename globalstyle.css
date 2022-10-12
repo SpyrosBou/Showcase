@@ -1,6 +1,12 @@
 *{
     font-family: oswald;
     color: white;
+    box-sizing: border-box;
+}
+
+
+html{
+    height: 100%;
 }
 
 body{

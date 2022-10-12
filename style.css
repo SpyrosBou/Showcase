@@ -2,38 +2,21 @@
 .row-container{
     display:flex;
     justify-content: space-evenly;
-    width:auto;
-    height: 14rem;
-    margin: 15vh 0;
+    align-items: center;
+    width:  100%;
+    height: 100%;
+    /* overflow: auto; */
 }
 
 .row-item{
-    border-radius: 3%;
     display: flex;
     flex-direction: column;
-    padding: none;
-    width: 15%;
-    height: 100%;
+    width: 35vh;
     justify-content: space-between;  
+    height: 35vh;
+    flex: none;
     align-items: center;
-    text-align: center;
-}
-#showcase{
-    background-image: url(./Resources/showcase.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#majewels{
-    background-image: url(./Resources/majewels.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-#tiling{
-    background-image: url(./Resources/tiling.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: 0 1rem;
 }
 
 .row-image{
@@ -42,7 +25,47 @@
     border-radius: 3%;
 }
 
+img{
+    object-fit: cover;
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
+}
+
 .row-image:hover{
     box-shadow: 0px 0px 30px 5px whitesmoke;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+
+
+    .row-container{
+        flex-direction: column;
+        justify-content: space-between;  
+        height: 100%;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .row-item{
+        width: 100%;
+        height: 20rem;
+        margin-top: 1rem;
+    }
+
+    img{
+
+        border-radius: 0%;
+    }
+
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 990px) {
+
+    .row-item{
+        width: 25vh;
+        height: 25vh;
+        
+    }
+}
